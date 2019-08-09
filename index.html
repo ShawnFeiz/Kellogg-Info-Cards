@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info Cards | Kellogg</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/k_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/k_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body id='siteBody'>
+<div class="corner-ribbon top-right sticky blue"> Made For Kellogg &#128513;</div>
+<div id="addHTML">
+    <div class="column leftPanel">
+            <h1 id="compileHeader"> How To: </h1>
+            <p class="howToPara"> This currently only works in Chrome. </p>
+            <p class="howToPara">1.) First find a roster and access the Developer Tools (CTRL/CMD + SHIFT + I). </p>
+            <p class="howToPara">2.) Go to the Elements tab. </p>
+            <p class="howToPara">3.) Right click <i> html </i> and click Edit as HTML. </p>
+            <p class="howToPara">4.) Copy the text, paste it into the text box below, and then click <i> Compile Cards</i>. </p>
+            <p class="howToPara">5.) Print using A6 cards! </p>
+    </div>
+
+    <div class="column rightPanel">
+        <textarea rows="15" columns="40" id="cardData" placeholder="Paste HTML here!"></textarea>
+        <br>
+        <button id="compileCards" class="btn btn-lg btn-primary btnCustom">Compile Cards</button>
+    </div>
+        
+</div>
+
+<div id="namesHolder"></div>
+<div id="nicknamesHolder"></div>
+<div id="cardHolder"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/script/script.js"></script>
+</body>
+</html>

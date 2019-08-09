@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+/* Styling for main content panels and columns */
+.column {
+    float: left;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.leftPanel {
+    width: 25%;
+    background-color: rgb(97,54,133);  
+    padding: 100px 10px;
+    color: white;
+}
+
+.leftPanel p {
+    font-size: 1.15em;
+}
+
+.rightPanel {
+    width: 75%;
+    /* background-color: rgb(166,109,190); */
+    background-color: #e1bee7;
+    padding: 100px 10px;
+    text-align: center;
+}
+
+#addHTML {
+    border: none;
+}
+
+/* Button styling */
+.btnCustom {
+    background-color: rgb(97,54,133);  
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnCustom:hover {
+    opacity: 1;
+}
+
+.btnCustom:active {
+    outline: none;
+    border: none;
+}
+
+
+/* Ribbon styling */
+.corner-ribbon{
+    width: 200px;
+    background: rgb(97,54,133);  
+    text-align: center;
+    font-size: .75em;
+    line-height: 45px;
+    letter-spacing: 0.8px;
+    color: #f0f0f0;
+}
+
+.corner-ribbon.sticky{
+    position: fixed;
+}
+
+.corner-ribbon.top-right{
+    top: 30px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Remove textarea placeholder */
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}   
+
+
+/* ======================================================= */
+
+/* compile cards */
+h2#compileHeader {
+    margin-bottom: .25em;
+}
+
+div#addHtml {
+    margin: 2em 0 0 2em;
+}
+
+p.howToPara {
+    padding: .25em 0;
+}
+
+textarea {
+    width: 30%;
+    text-align: left;
+    margin: 1.5em auto;
+    outline: none;
+    resize: none;
+    background-color: white;
+    border: none;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+    }
+
+button#compileCards {
+    font-size: 1em;
+    padding: .5em;
+    border-radius: 10em;
+}
+
+button#compileCards:hover {
+    cursor: pointer;
+}
+
+
+/* card margins --> margins are for A6 index cards. Make sure your printer has the correct A6 driver installed */
+
+div.card {
+	width: 5.82677in;
+	height: 4.13386in;
+	display: block;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+
+div.cardData {
+	padding-top: .5in;
+	padding-left: .5in;
+}
+
+div.topRow {
+    padding-bottom: .05in;
+    clear: both;
+    overflow: auto;
+}
+
+div.bottomRow {
+    clear: both;
+}
+
+div.leftColumn {
+    padding-right: .75in;
+}
+
+div.topColumn, div.leftColumn, div.rightColumn {
+    float: left;
+}
+
+div.topColumn {
+    width: 80%;
+}
+
+div.leftColumn {
+    width: 20%;
+}
+
+div.rightColumn {
+    width: 50%;
+}
+
+img.profileImage {
+    max-width: 1.5in;
+    max-height: 2in;
+    padding-top: .25in;
+    border-radius: .1em;
+}
+
+/* text in cards */
+h2 {
+    font-size: 1.5em;
+}
+
+p.paraNick, p.paraShort {
+    font-weight: normal;
+}
+
+p.paraNick {
+    padding-top: .05in;
+}
+
+p.paraShort {
+    padding-bottom: .025in;
+    font-size: 13px;
+}
